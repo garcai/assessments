@@ -1,0 +1,146 @@
+@import url(//fonts.googleapis.com/css?family=Material+Icons);
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5em;
+  background-color: rgb(255, 20, 20);
+  color: rgb(255, 255, 255);
+  top: 0;
+  left: 0;
+  position: sticky;
+}
+
+#navbar > div {
+  padding: 1em;
+  margin-left: 1.5em;
+  height: 100%;
+}
+
+#navbar a {
+  display: block;
+  outline: none;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+#navbar > div:hover,
+#navbar > div:focus {
+  background: rgb(200, 200, 200);
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(50, 50, 50);
+}
+
+#welcome-section > h1 {
+  font-size: 3.5em;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0;
+}
+
+#welcome-section > p {
+  font-size: 2em;
+  color: rgb(240, 10, 10);
+  font-style: italic;
+  margin-top: 0;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(70, 60, 250);
+}
+
+#projects > h2 {
+  font-size: 2.5em;
+  align-self: center;
+  color: rgb(255, 255, 255);
+}
+
+.underline {
+  border-bottom: 2px solid currentColor;
+  display: inline-block;
+  line-height: 1.5;
+}
+
+.my-projects {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.project-tile img {
+  width: 400px;
+  margin: 2em;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(50, 50, 50);
+  border-bottom: 2px solid red;
+}
+
+#contact > h2 {
+  font-size: 2.5em;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0;
+}
+
+#contact > p {
+  font-size: 1.5em;
+  color: rgb(240, 10, 10);
+  font-style: italic;
+  margin-top: 0;
+}
+
+#contact > ul {
+  list-style: none;
+}
+
+#contact li {
+  display: inline;
+  padding: 0 3em;
+  font-size: 1.5em;
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  background-color: rgb(50, 50, 50);
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 480px) {
+  #navbar {
+    font-size: 1em;
+  }
+}

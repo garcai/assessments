@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Forms</title>
+  <link href="styles/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <p><a href="/">Home</a></p>
+  <p><a href="index.html">Back to Forms Home</a></p>
+  <p><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form" target="_blank">MDU Lesson</a></p>
+
+  <form action="handle-contact.php" method="post">
+    <ul>
+      <li>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" value="Joe Doe">
+      </li>
+      <li>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" name="user_mail">
+      </li>
+  
+      <li>
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="user_message">
+This is default text for texarea
+        </textarea>
+      </li>
+      <li class="button">
+        <button type="submit">Send your message</button>
+      </li>
+    </ul>
+  </form>
+</body>
+</html>

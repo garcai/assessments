@@ -1,0 +1,88 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+
+  /* get rid of body scroll bar */
+  /* overflow-y: hidden; */
+}
+
+/* using 2 separate scroll bars */
+
+#main-doc {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  padding: 1em;
+
+  /* max-height 90% gives more space at bottom  */
+  max-height: 90vh;
+  overflow-y: scroll;
+}
+
+.main-section > header {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.main-section li {
+  margin-bottom: 1em;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: column;
+  border-right: 4px solid rgb(200, 200, 200);
+  padding: 1em;
+  width: 25%;
+
+  /* max-height 90% gives more space at bottom  */
+  max-height: 90vh;
+  overflow-y: scroll;
+}
+
+#nav-bar > p {
+  border-bottom: 1px solid black;
+}
+
+#nav-bar > header {
+  border-bottom: 1px solid black;
+  margin-bottom: 1em;
+}
+
+pre code {
+  display: block;
+}
+
+@media screen and (max-width: 480px) {
+  #main {
+    flex-direction: column;
+  }
+
+  #nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    border-bottom: 4px solid rgb(200, 200, 200);
+    border-right: 0;
+    width: 100%;
+  }
+
+  #nav-bar > header {
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+  }
+
+  #nav-bar > p {
+    border-bottom: 1px solid black;
+  }
+}

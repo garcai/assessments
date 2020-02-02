@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(240, 240, 240);
+  margin: 0 auto;
+  max-width: 1224px;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+
+  /* Cross axis because of column direction */
+  align-items: center;
+}
+
+#title {
+  font-size: 2em;
+}
+
+#img-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+#image {
+  max-width: 1024px;
+}
+
+#img-caption {
+  font-size: 0.9em;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  max-width: 60em;
+  align-self: center;
+}
+
+li {
+  margin-bottom: 1em;
+}
+
+#tribute-info {
+  align-self: center;
+  font-size: 1.2em;
+}
+
+footer {
+  align-self: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#tribute-link {
+  color: rgb(125, 125, 240);
+}
