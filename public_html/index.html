@@ -23,15 +23,22 @@
   <link rel="stylesheet" href="/styles/styles.css">
 
 </head>
-<body class="page-flex">
-
+<body class="page">
   <nav class="top-nav-container">
+
+    <!-- add skip link for accessabilty -->
+
+    <div class="skip">
+      <a href="#content">Skip To Main Content</a>
+    </div>
+
     <div class="top-nav">
       <div>
         <a href="/">Home</a>
       </div>
+
       <div class="dropdown">
-        <span>Free Code Camp</span>
+        <span>Responsive Design</span>
         <div class="dropdown-content">
           <a href="free-code-camp/landing-page" target="main-frame">Landing Page</a>
           <a href="free-code-camp/portfolio"target="main-frame">Portforio</a>
@@ -40,26 +47,34 @@
           <a href="free-code-camp/survey-form"target="main-frame">Survey Form</a>
         </div>
       </div>
-      <div class="top-contact"><a href="contact.php">contact</a></div>
-      <div class="top-search"><a href="search.php">search</a></div>
+
+      <div class="top-contact">
+        <a href="contact.php">contact</a>
+      </div>
+
+      <div class="top-search">
+        <a href="search.php">search</a>
+      </div>
     </div>
+
   </nav>
 
-  <section class="main-content">
+<main id="content">
+
     <article>
       <iframe src="home-content.html" name="main-frame" class="frame"></iframe>
     </article>
-
+    <!--
     <aside class="vert-nav">
-      <p>More stuff a bit longer too</p>
-      <p>More stuff a bit longer too</p>
-      <p>More stuff a bit longer too</p>
-    </aside>
-  </section>
+    <p>More stuff a bit longer too</p>
+    <p>More stuff a bit longer too</p>
+    <p>More stuff a bit longer too</p>
+  </aside> -->
 
-  <footer>
-    <p>Put footer here</p>
-  </footer>
+</main>
+<footer>
+  <p>Put footer here</p>
+</footer>
 
 </body>
 </html>
