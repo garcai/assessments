@@ -8,7 +8,19 @@ html {
   box-sizing: inherit;
 }
 
-/* if I use body I loose style for iframe in article */
+.top-nav-container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background-color: rgb(200, 200, 200);
+
+  /* sticky not needed unless I fill aside  */
+  /* position: -webkit-sticky;
+  position: sticky;
+  top: 0; */
+}
+
 .page {
   display: -webkit-box;
   display: flex;
@@ -17,18 +29,6 @@ html {
   flex-direction: column;
   margin: 0 auto;
   max-width: 1240px;
-  background: url(/images/sunset.jpg) no-repeat center fixed;
-}
-
-/* Will have nav in sidebar so making seperate class instead of styling nav */
-.top-nav-container {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  background-color: rgb(200, 200, 200);
-
-  /* Dont need sticky because of iframe */
 }
 
 .top-nav {
@@ -71,7 +71,9 @@ html {
   background-color: rgb(240, 240, 240);
   min-width: 100%;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  z-index: 1;
+
+  /* z-index 1 keeps it hidden  */
+  z-index: 2;
 }
 
 /* Show the dropdown menu on hover */
@@ -104,54 +106,10 @@ html {
   background-color: rgb(220, 220, 220);
 }
 
-main {
-  display: -webkit-box;
-  display: flex;
-}
-
-.frame {
-  width: 100%;
-  border: 0;
-
-  /* make room for header and footer */
-  min-height: calc(100vh - 6.5em);
-}
-
-article {
-  background-color: rgb(240, 240, 220);
-  -webkit-box-ordinal-group: 2;
-  order: 1;
-  -webkit-box-flex: 1;
-  flex-grow: 1;
-  padding: 0 1em;
-}
-
-.vert-nav {
-  background-color: orange;
-  padding: 0 1em;
-  border: 1px solid red;
-}
-
-footer {
-  display: flex;
-  background-color: rgb(200, 200, 200);
-}
-
-/* body *:not(.main):not(.printable) {
-display: none;
+/* body *:not(.page) {
+  display: none;
 } */
 
-@media print {
-  body *:not(.printable):not(p):not(h1) {
-    display: none;
-  }
+body *:not(main):not(.flash):not(.menu):not(.anuncios) {
+  display: none;
 }
-
-
-
-/* @media print {
-:not(p):not(h1)
-  body *:not(.main) .printable h1 {
-    display: none;
-  }
-} */
