@@ -27,8 +27,6 @@ html {
   -webkit-box-pack: center;
   justify-content: center;
   background-color: rgb(200, 200, 200);
-
-  /* Dont need sticky because of iframe */
 }
 
 .top-nav {
@@ -71,7 +69,9 @@ html {
   background-color: rgb(240, 240, 240);
   min-width: 100%;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  z-index: 1;
+
+  /* z-index 1 keeps it hidden  */
+  z-index: 2;
 }
 
 /* Show the dropdown menu on hover */
@@ -107,6 +107,8 @@ html {
 main {
   display: -webkit-box;
   display: flex;
+
+  /* flex-direction: column; */
 }
 
 .frame {
@@ -138,11 +140,20 @@ footer {
 }
 
 /* body *:not(.main):not(.printable) {
-display: none;
+  display: none;
 } */
 
 @media print {
-  body *:not(.printable):not(p):not(h1) {
+  body *:not(.printable) {
     display: none;
   }
+
+  /* body *:not(.printable) {
+    display: none;
+  } */
+
+  /* .printable * {
+  display: block;
+  color: blue;
+  } */
 }
