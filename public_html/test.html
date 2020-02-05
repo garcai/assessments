@@ -24,7 +24,7 @@
 
 </head>
 <body class="page">
-  <nav class="top-nav-container">
+  <nav class="top-nav-container" role="navigation">
 
     <!-- add skip link for accessabilty -->
 
@@ -32,45 +32,48 @@
       <a href="#content">Skip To Main Content</a>
     </div>
 
-    <div class="top-nav">
-      <div>
+    <ul class="top-nav">
+      <li>
         <a href="/">Home</a>
-      </div>
+      </li>
 
-      <div>
+      <li>
         <a href="test.html">Test</a>
-      </div>
+      </li>
 
-      <div class="dropdown">
+      <li class="dropdown">
         <span>Responsive Design</span>
-        <div class="dropdown-content">
+        <ul>
+        <li class="dropdown-content">
           <a href="free-code-camp/landing-page" target="main-frame">Landing Page</a>
           <a href="free-code-camp/portfolio"target="main-frame">Portforio</a>
           <a href="free-code-camp/techincal-document"target="main-frame">Technical Docment</a>
           <a href="free-code-camp/tribute-page"target="main-frame">Tribute Page</a>
           <a href="free-code-camp/survey-form"target="main-frame">Survey Form</a>
-        </div>
-      </div>
+        </li>
+      </ul>
+      </li>
 
-      <div class="top-contact">
+      <li class="top-contact">
         <a href="contact.php">contact</a>
-      </div>
+      </li>
 
-      <div class="top-search">
+      <li class="top-search">
         <a href="search.php">search</a>
-      </div>
-    </div>
+      </li>
+    </ul>
 
   </nav>
 
-  <main id="content" class="printable">
+  <main id="content" class = "printable" >
   <!-- <main class="printable"> -->
 
     <article class="printable">
-      <iframe src="home-content.html" name="main-frame" class="frame"></iframe>
+
+      <iframe src="home-content.html" name="main-frame" class="frame printable"></iframe>
     </article>
 
-    <aside class="vert-nav">
+    <aside class="vert-nav printable">
       <p>More stuff a bit longer too</p>
       <p>More stuff a bit longer too</p>
       <p>More stuff a bit longer too</p>

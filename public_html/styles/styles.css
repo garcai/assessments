@@ -95,9 +95,11 @@ html {
 }
 
 .skip a:focus {
-  left: 10em;
-  top: 0;
-  background: rgb(255, 0, 0);
+  left: 20em;
+  top: 2em;
+  background: rgb(125, 125, 125);
+  border-radius: 0.3em;
+  color: rgb(245, 10, 10);
 }
 
 .dropdown-content a:hover {
@@ -140,18 +142,8 @@ footer {
 /* body *:not(.main):not(.printable) {
 display: none;
 } */
-
 @media print {
   body *:not(.printable):not(p):not(h1) {
     display: none;
   }
 }
-
-
-
-/* @media print {
-:not(p):not(h1)
-  body *:not(.main) .printable h1 {
-    display: none;
-  }
-} */

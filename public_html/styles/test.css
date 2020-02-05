@@ -17,8 +17,10 @@ html {
   flex-direction: column;
   margin: 0 auto;
   max-width: 1240px;
+  background: url(/images/sunset.jpg) no-repeat center fixed;
 }
 
+/* Will have nav in sidebar so making seperate class instead of styling nav */
 .top-nav-container {
   display: -webkit-box;
   display: flex;
@@ -26,10 +28,7 @@ html {
   justify-content: center;
   background-color: rgb(200, 200, 200);
 
-  /* sticky not needed unless I fill aside  */
-  /* position: -webkit-sticky;
-  position: sticky;
-  top: 0; */
+  /* Dont need sticky because of iframe */
 }
 
 .top-nav {
@@ -43,51 +42,63 @@ html {
   min-width: 100%;
 }
 
-.top-nav > div {
-  padding: 1em;
-  height: 100%;
+li {
+  display: block;
+  transition-duration: 0.5s;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+/* .top-nav > div {
+padding: 1em;
+height: 100%;
 }
 
 .top-nav > div:hover,
 .top-nav > div:active {
-  background-color: rgb(220, 220, 220);
+background-color: rgb(220, 220, 220);
 }
 
 .top-nav a {
-  color: rgb(10, 10, 220);
-  text-decoration: none;
+color: rgb(10, 10, 220);
+text-decoration: none;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-  color: rgb(10, 10, 220);
+/* The container <div> - needed to position the dropdown content */
+
+/* .dropdown {
+position: relative;
+display: inline-block;
+color: rgb(10, 10, 220);
 }
 
 /* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgb(240, 240, 240);
-  min-width: 100%;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 
-  /* z-index 1 keeps it hidden  */
-  z-index: 2;
-}
+/* .dropdown-content {
+display: none;
+position: absolute;
+background-color: rgb(240, 240, 240);
+min-width: 100%;
+box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+z-index: 1;
+} */
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+
+/* .dropdown:hover .dropdown-content {
+display: block;
+} */
 
 /* Links inside the dropdown */
-.dropdown-content a {
-  color: rgb(10, 10, 220);
-  padding: 5px 10px;
-  text-decoration: none;
-  display: block;
-}
+
+/* .dropdown-content a {
+color: rgb(10, 10, 220);
+padding: 5px 10px;
+text-decoration: none;
+display: block;
+}  */
 
 .skip a {
   display: block;
@@ -97,23 +108,56 @@ html {
 }
 
 .skip a:focus {
-  left: 10em;
-  top: 0;
-  background: rgb(255, 0, 0);
+  left: 20em;
+  top: 1em;
+  background: rgb(125, 125, 125);
+  border-radius: 0.3em;
+  color: rgb(245, 10, 10);
+  padding: 1em;
 }
 
-.dropdown-content a:hover {
-  background-color: rgb(220, 220, 220);
-}
-
-body *:not(#div1):not(.div2) {
-  display: none;
-}
-
-/* body > *:not(.div1) {
-  display: none;
-}
-
-.div1 > *:not(.div2) {
-  display: none;
+/* .dropdown-content a:hover {
+background-color: rgb(220, 220, 220);
 } */
+
+main {
+  display: -webkit-box;
+  display: flex;
+}
+
+.frame {
+  width: 100%;
+  border: 0;
+
+  /* make room for header and footer */
+  min-height: calc(100vh - 6.5em);
+}
+
+article {
+  background-color: rgb(240, 240, 220);
+  -webkit-box-ordinal-group: 2;
+  order: 1;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  padding: 0 1em;
+}
+
+.vert-nav {
+  background-color: orange;
+  padding: 0 1em;
+  border: 1px solid red;
+}
+
+footer {
+  display: flex;
+  background-color: rgb(200, 200, 200);
+}
+
+/* body *:not(.main):not(.printable) {
+display: none;
+} */
+@media print {
+  body *:not(.printable):not(p):not(h1) {
+    display: none;
+  }
+}
