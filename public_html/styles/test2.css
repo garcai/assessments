@@ -9,6 +9,7 @@ html {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .top-nav-container {
   display: -webkit-box;
   display: flex;
@@ -109,6 +110,8 @@ html {
 body *:not(main):not(.flash):not(.menu):not(.anuncios) {
   display: none;
 =======
+=======
+>>>>>>> b987ccb3f91548e7ab6fa6d6ea235b63289739c8
 a {
   text-decoration: none;
 }
@@ -174,5 +177,8 @@ ul li:hover > ul,
 ul li:focus-within > ul,
 ul li ul:hover {
   display: block;
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> b987ccb3f91548e7ab6fa6d6ea235b63289739c8
 }

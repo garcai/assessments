@@ -139,6 +139,7 @@ footer {
   background-color: rgb(200, 200, 200);
 }
 
+<<<<<<< HEAD
 /* body *:not(.main):not(.printable) {
 display: none;
 } */
@@ -146,6 +147,8 @@ display: none;
 
 =======
 >>>>>>> features
+=======
+>>>>>>> b987ccb3f91548e7ab6fa6d6ea235b63289739c8
 @media print {
   body *:not(.printable):not(p):not(h1) {
     display: none;

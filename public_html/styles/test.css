@@ -28,10 +28,14 @@ html {
   justify-content: center;
   background-color: rgb(200, 200, 200);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
   /* Dont need sticky because of iframe */
 >>>>>>> features
+=======
+
+>>>>>>> b987ccb3f91548e7ab6fa6d6ea235b63289739c8
 }
 
 .top-nav {
@@ -46,10 +50,13 @@ html {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .top-nav > div {
   padding: 1em;
   height: 100%;
 =======
+=======
+>>>>>>> b987ccb3f91548e7ab6fa6d6ea235b63289739c8
 li {
   display: block;
   transition-duration: 0.5s;
@@ -62,11 +69,16 @@ li:hover {
 /* .top-nav > div {
 padding: 1em;
 height: 100%;
+<<<<<<< HEAD
 >>>>>>> features
+=======
+
+>>>>>>> b987ccb3f91548e7ab6fa6d6ea235b63289739c8
 }
 
 .top-nav > div:hover,
 .top-nav > div:active {
+<<<<<<< HEAD
 <<<<<<< HEAD
   background-color: rgb(220, 220, 220);
 }
@@ -108,6 +120,9 @@ height: 100%;
   display: block;
 }
 =======
+=======
+
+>>>>>>> b987ccb3f91548e7ab6fa6d6ea235b63289739c8
 background-color: rgb(220, 220, 220);
 }
 
@@ -149,7 +164,11 @@ padding: 5px 10px;
 text-decoration: none;
 display: block;
 }  */
+<<<<<<< HEAD
 >>>>>>> features
+=======
+
+>>>>>>> b987ccb3f91548e7ab6fa6d6ea235b63289739c8
 
 .skip a {
   display: block;
@@ -160,6 +179,17 @@ display: block;
 
 .skip a:focus {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  left: 20em;
+  top: 1em;
+  background: rgb(125, 125, 125);
+  border-radius: 0.3em;
+  color: rgb(245, 10, 10);
+  padding: 1em;
+}
+
+>>>>>>> b987ccb3f91548e7ab6fa6d6ea235b63289739c8
   left: 10em;
   top: 0;
   background: rgb(255, 0, 0);
@@ -168,6 +198,7 @@ display: block;
 .dropdown-content a:hover {
   background-color: rgb(220, 220, 220);
 }
+<<<<<<< HEAD
 =======
   left: 20em;
   top: 1em;
@@ -191,6 +222,11 @@ main {
 =======
 >>>>>>> features
 }
+=======
+
+
+
+>>>>>>> b987ccb3f91548e7ab6fa6d6ea235b63289739c8
 
 .frame {
   width: 100%;
@@ -220,6 +256,7 @@ footer {
   background-color: rgb(200, 200, 200);
 }
 
+<<<<<<< HEAD
 /* body *:not(.main):not(.printable) {
 <<<<<<< HEAD
   display: none;
@@ -247,3 +284,11 @@ display: none;
   }
 >>>>>>> features
 }
+=======
+
+@media print {
+  body *:not(.printable):not(p):not(h1) {
+    display: none;
+ }
+
+>>>>>>> b987ccb3f91548e7ab6fa6d6ea235b63289739c8
