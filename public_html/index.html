@@ -24,21 +24,24 @@
 
 </head>
 <body class="page">
+  <!-- add skip link for accessabilty -->
+  <div class="skip">
+    <a href="#content">Skip To Main Content</a>
+  </div>
+
   <nav class="top-nav-container">
-
-    <!-- add skip link for accessabilty -->
-
-    <div class="skip">
-      <a href="#content">Skip To Main Content</a>
-    </div>
-
     <div class="top-nav">
       <div>
         <a href="/">Home</a>
       </div>
 
+      <div>
+        <a href="test.html">Test</a>
+      </div>
+
       <div class="dropdown">
-        <span>Responsive Design</span>
+        <a href="#">Responsive Design</a>
+        <!-- <span>Responsive Design</span> -->
         <div class="dropdown-content">
           <a href="free-code-camp/landing-page" target="main-frame">Landing Page</a>
           <a href="free-code-camp/portfolio"target="main-frame">Portforio</a>
@@ -59,22 +62,24 @@
 
   </nav>
 
-<main id="content">
+  <main id="content" class = "printable" >
+  <!-- <main class="printable"> -->
 
-    <article>
-      <iframe src="home-content.html" name="main-frame" class="frame"></iframe>
+    <article class="printable">
+
+      <iframe src="home-content.html" name="main-frame" class="frame printable"></iframe>
     </article>
-    <!--
-    <aside class="vert-nav">
-    <p>More stuff a bit longer too</p>
-    <p>More stuff a bit longer too</p>
-    <p>More stuff a bit longer too</p>
-  </aside> -->
 
-</main>
-<footer>
-  <p>Put footer here</p>
-</footer>
+    <aside class="vert-nav printable">
+      <p>More stuff a bit longer too</p>
+      <p>More stuff a bit longer too</p>
+      <p>More stuff a bit longer too</p>
+    </aside>
+
+  </main>
+  <footer>
+    <p>Put footer here</p>
+  </footer>
 
 </body>
 </html>

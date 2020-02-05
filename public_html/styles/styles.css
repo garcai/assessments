@@ -95,9 +95,11 @@ html {
 }
 
 .skip a:focus {
-  left: 10em;
-  top: 0;
-  background: rgb(255, 0, 0);
+  left: 20em;
+  top: 2em;
+  background: rgb(125, 125, 125);
+  border-radius: 0.3em;
+  color: rgb(245, 10, 10);
 }
 
 .dropdown-content a:hover {
@@ -136,10 +138,6 @@ footer {
   display: flex;
   background-color: rgb(200, 200, 200);
 }
-
-/* body *:not(.main):not(.printable) {
-display: none;
-} */
 
 @media print {
   body *:not(.printable):not(p):not(h1) {
