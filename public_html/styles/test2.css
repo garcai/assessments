@@ -8,6 +8,7 @@ html {
   box-sizing: inherit;
 }
 
+<<<<<<< HEAD
 .top-nav-container {
   display: -webkit-box;
   display: flex;
@@ -107,4 +108,71 @@ html {
 
 body *:not(main):not(.flash):not(.menu):not(.anuncios) {
   display: none;
+=======
+a {
+  text-decoration: none;
+}
+
+nav {
+  font-family: monospace;
+}
+
+ul {
+  background: darkorange;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  color: #fff;
+  background: darkorange;
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+li a {
+  color: #fff;
+}
+
+ul li ul li {
+  /* clear: both; */
+  width: 100%;
+}
+
+li:hover {
+  background: red;
+  cursor: pointer;
+}
+
+ul li ul {
+  display: none;
+  position: absolute;
+  margin-top: 1rem;
+  left: 0;
+  min-width: 5rem;
+}
+
+/* ul li ul {
+background: orange;
+visibility: hidden;
+opacity: 0;
+min-width: 5rem;
+position: absolute;
+transition: all 0.5s ease;
+margin-top: 1rem;
+left: 0;
+display: none;
+} */
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover {
+  display: block;
+>>>>>>> features
 }
