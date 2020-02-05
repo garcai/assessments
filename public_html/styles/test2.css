@@ -31,6 +31,7 @@ li {
   padding: 1rem;
   position: relative;
   text-decoration: none;
+  -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
 
