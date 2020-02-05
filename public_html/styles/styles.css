@@ -139,9 +139,6 @@ footer {
   background-color: rgb(200, 200, 200);
 }
 
-/* body *:not(.main):not(.printable) {
-display: none;
-} */
 @media print {
   body *:not(.printable):not(p):not(h1) {
     display: none;
