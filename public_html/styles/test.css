@@ -28,6 +28,7 @@ html {
   justify-content: center;
   background-color: rgb(200, 200, 200);
 
+  /* Dont need sticky because of iframe */
 }
 
 .top-nav {
@@ -53,12 +54,10 @@ li:hover {
 /* .top-nav > div {
 padding: 1em;
 height: 100%;
-
 }
 
 .top-nav > div:hover,
 .top-nav > div:active {
-
 background-color: rgb(220, 220, 220);
 }
 
@@ -101,7 +100,6 @@ text-decoration: none;
 display: block;
 }  */
 
-
 .skip a {
   display: block;
   position: absolute;
@@ -118,17 +116,14 @@ display: block;
   padding: 1em;
 }
 
-  left: 10em;
-  top: 0;
-  background: rgb(255, 0, 0);
+/* .dropdown-content a:hover {
+background-color: rgb(220, 220, 220);
+} */
+
+main {
+  display: -webkit-box;
+  display: flex;
 }
-
-.dropdown-content a:hover {
-  background-color: rgb(220, 220, 220);
-}
-
-
-
 
 .frame {
   width: 100%;
@@ -158,9 +153,11 @@ footer {
   background-color: rgb(200, 200, 200);
 }
 
-
+/* body *:not(.main):not(.printable) {
+display: none;
+} */
 @media print {
   body *:not(.printable):not(p):not(h1) {
     display: none;
- }
-
+  }
+}
